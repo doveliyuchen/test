@@ -119,12 +119,15 @@
       let intro=''
       Object.values(players).sort((a,b) => (b.score - a.score)).forEach((player, index) => {
         scores += "<p><span style='color: " + player.colour + ";'>" + player.name + "</span> has " + player.score + " piece(s) of food</p>"
-        if (playerId == socket.id) {
-         intro="You are "+"<span style='color: " + player.colour + ";'>" + player.name + "</span>"+"!"+"<br>"+"Use 'w','a','s','d' or arrow keys to control it!"
-        }
+        
       })
-
-
+      
+      Object.keys(players).forEach((playerId) => {
+        let player = players[playerId]
+        if (playerId == socket.id) {
+          intro="You are "+"<span style='color: " + player.colour + ";'>" + player.name + "</span>"+"!"+"<br>"+"Use 'w','a','s','d' or arrow keys to control it!"
+         }
+        })
       document.getElementById('intro').innerHTML= intro
       document.getElementById('scores').innerHTML = scores
 
