@@ -4,9 +4,6 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server); // Pass server to it instead of port
 
-// Now you can pass `io` to any file you want, and setup your socket logic
-// Do the same for express app.
-// Or handle the logic here, whatever you prefer
 
 
 
