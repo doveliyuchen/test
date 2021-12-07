@@ -113,12 +113,12 @@
 
       // set score info
       let playerCount = Object.keys(players).length
-      
+      document.getElementById('intro').innerHTML= "You are "+"<span style='color: " + player.colour + ";'>" + player.name + "</span>"+"!"+"<br>"+"Use 'w','a','s','d' or arrow keys to control it!"
       document.getElementById('playerCount').innerHTML = String(playerCount) + " fish" +  " in the salty seas"
       let scores = ''
       Object.values(players).sort((a,b) => (b.score - a.score)).forEach((player, index) => {
         scores += "<p><span style='color: " + player.colour + ";'>" + player.name + "</span> has " + player.score + " piece(s) of food</p>"
-        document.getElementById('intro').innerHTML= "You are "+"<span style='color: " + player.colour + ";'>" + player.name + "</span>"+"!"+"<br>"+"Use 'w','a','s','d' or arrow keys to control it!"
+        
       })
 
 
