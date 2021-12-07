@@ -73,6 +73,9 @@ function movePlayer(id) {
 
   if (checkCollision(player, piece)) {
     player.score += 1
+ 
+    
+
     shufflepiece()
   }
 }
@@ -101,7 +104,7 @@ function accelPlayer(id, x, y) {
   }
 }
 
-// thanks SO
+
 function stringToColour(str) {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {

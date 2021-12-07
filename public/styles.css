@@ -6,12 +6,19 @@ body {
 
 }
 
+#container{
+  display: block;
+  margin: auto auto;
+
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 9vw;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 1vw;
 }
 
 #game {
@@ -19,21 +26,30 @@ body {
   background-color: rgba(201, 118, 248, 0.4);
   border: 2px solid rgb(255, 255, 255);
   margin: auto;
-  margin-left: 20vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
-
+#intro {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 1vw;
+  margin-right: 1vw;
+}
 #playerCount {
   color: white;
   width: 100%;
   text-align: center;
-  margin: 5vw;
+  margin: 1vw;
+  margin-right: 1vw;
 }
 
 #scores{
   color: white;
   width: 100%;
   text-align: center;
-  margin: 5vw;
+  margin: 1vw;
+  margin-right: 1vw;
 }
 
 
